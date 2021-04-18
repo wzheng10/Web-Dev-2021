@@ -1,0 +1,41 @@
+HTML(Hypertext Markup Language) - a markup language
+HTML Elements - to write HTML, we pick from a set of standar elements that all browers recognize
+  i.e.  <p> elements
+        <h1> element
+        <img> element
+        <form> element
+  -consists of a opening tag <p> and a closing tag </p>
+HTML Skeleton
+  -We write our HTML in a standard 'Skeleton' aka 'Boilerplate'
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>My First Page</title>
+  </head>
+  <body>
+    <!-- Content Goes Here -->
+  </body>
+  </html>
+
+<html> element
+  -contains one head element and one body element
+  -has all the meta data meaning it does not show up in the document itself
+<head> element 
+  -contains machine-readable metadata(information) about the document
+  <title> element
+    -defines the title of the document for the browser tab
+<body> element>
+  -contains the entire content of the page
+
+***TIPS***
+-typing ! + tab will give boilerplayer in a html doc
+-format document will format the html
+-ctrl + alt + down/up will duplicate line up/down
+
+List Elements
+ol- order list of items numbered
+ul- unordered list of items bullet points
+li- list items and must have a ol/ul parent
+
+<a>- Anchor Tags - used to create hyperlinks
+  must use a href="<link>"
