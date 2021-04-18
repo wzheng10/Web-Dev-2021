@@ -39,3 +39,9 @@ li- list items and must have a ol/ul parent
 
 <a>- Anchor Tags - used to create hyperlinks
   must use a href="<link>"
+
+Image
+  <img> element- adds a image to the page and does not require a ending tag
+  -must include a src="<image link>" or file location on local machine within the image tag
+  -best practice to not adjust size of image in HTML but in CSS instead
+  -can also add alt attribute to specify a description of what the image is of
