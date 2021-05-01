@@ -1,0 +1,33 @@
+Section Goals
+  -Table Basics: <table>, <tr>, <td>, and <th> **CRUCIAL**
+  -Table Sections: <thead>, <tfoot>, <tbody> **Important**
+  -Table Colspan and Rowspan **Nice To Have**
+  -Form Element Basics **CRUCIAL**
+  -Button Elements **CRUCIAL**
+  -Labels **CRUCIAL**
+  -Range & Text Areas **Important**
+  -Common Input Types **CRUCIAL**
+  -Form Validations **Important**
+
+
+HTML Tables Elements
+<table>
+<td> - defines a cell of a table that contains data
+<tr> - represents a row of cells in a table
+<th> - defines a header of a group of table cells
+
+<thead> - can have more than one row of header
+<tfoot>
+
+rowspan
+colspan
+
+HTML FORMS
+-creating FORMS
+  the <form> element itseself is a shell or container that doesnt have any visual impact
+  we then fill the form with a collection of inputs, checkboxes, buttons, etc
+  i.e: email, fullname, password and confirm password
+
+  -represents a document section containing interactive controls for submitting information
+  -the action attribute specifies where the form data should be section
+  -the method attribute specifies which HTTP method should be used

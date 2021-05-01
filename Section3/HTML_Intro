@@ -45,3 +45,5 @@ Image
   -must include a src="<image link>" or file location on local machine within the image tag
   -best practice to not adjust size of image in HTML but in CSS instead
   -can also add alt attribute to specify a description of what the image is of
+
+  <!--Alt attribute is read by screen reader-->
