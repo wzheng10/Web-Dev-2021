@@ -62,3 +62,6 @@ label produces the description
 the input is the text box (the type)
 the id is the association for Username
 placeholder is the default description set in the text box
+
+Form Validations
+built-in browser validations
