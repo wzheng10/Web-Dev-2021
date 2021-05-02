@@ -31,3 +31,34 @@ HTML FORMS
   -represents a document section containing interactive controls for submitting information
   -the action attribute specifies where the form data should be section
   -the method attribute specifies which HTTP method should be used
+
+  submitting a form sends a HTTP request
+
+  <labels> element repersents a caption for an item in a user interface
+  cant nest the id inside th lables, but not semantic
+
+  <button> adds a button
+  can set type to button inside a form to make the button inactive
+
+  Checkbox, Radio Buttons, and Selects
+
+  radio needs all the same name and a value
+
+  selects - parent that contains a bunch of option balues
+
+  <form>
+    <p>
+        <label for="Username">Username</label>
+        <input type="text" id="username" placeholder="username">
+    </p>
+    <p>
+       <label for="Password">Password</label>
+       <input type="password" id="password" placeholder="password">
+    </p>
+    <button>Register</button>
+</form>
+
+label produces the description
+the input is the text box (the type)
+the id is the association for Username
+placeholder is the default description set in the text box
