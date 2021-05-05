@@ -1,0 +1,26 @@
+h2 {
+  color: teal;
+  text-decoration: underline pink ;
+}
+
+button {
+  color: magenta;
+  background-color: cyan;
+}
+
+p {
+  color: olive;
+  line-height: 2.0;
+  letter-spacing: 5px;
+  font-family: Times New Roman;
+}
+h1 {
+  text-align: center;
+  color: purple;
+  font-weight: lighter;
+  text-decoration: underline orange;
+  font-size: 100px;
+}
+a {
+  text-decoration: none;
+}

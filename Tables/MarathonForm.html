@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Race Register Form</title>
+</head>
+
+<body>
+  <h1>Race Registration!</h1>
+  <form action="Registration">
+    <label for="First">First Name</label>
+    <input type="text" id="First" name="First" placeholder="First Name" required>
+    <label for="Last">Last Name</label>
+    <input type="text" id="Last" name="Last" placeholder="Last Name" required>
+    <p>
+      <!-- <label for="type">Select a Race:</label><br>
+      <input type="radio" name="type" id="Fun Run 5k">Fun Run 5k<br>
+      <input type="radio" name="type" id="Half Marathon">Half Marathon<br>
+      <input type="radio" name="type" id="Full Marathon">Full Marathon<br> -->
+      <label for="title">Select a race</label>
+        <div>
+          <input type="radio" name="race" id="funrun" value="funrun">
+          <label for="funrun">Fun Run 5k</label>
+        </div>
+        <div>
+          <input type="radio" name="race" id="half" value="half">
+          <label for="half">Half Marathon</label>
+        </div>
+        <div>
+          <input type="radio" name="race" id="full" value="full">
+          <label for="full">Full Marathon</label>
+        </div>
+    </p>
+
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email Address" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" minlength="3" maxlength="20" placeholder="Password" required>
+    </p>
+    <p>
+      <label for="Age">Select Age Group</label>
+      <select name="Age" id="Age">
+        <option value="18 and Under"> 18 and Under</option>
+        <option value="19-30">19-30</option>
+        <option value="30+"> 30+</option>
+      </select>
+    </p>
+    <button>Register!</button>
+  </form>
+</body>
+
+</html>
+<!-- file:///C:/Users/wzhen/Desktop/Not%20Giving%20Up/Tables/
+  Registration?First=Wei&Last=Zheng&Age=19-30 -->

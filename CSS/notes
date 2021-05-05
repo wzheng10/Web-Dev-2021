@@ -1,0 +1,41 @@
+CSS- the visual manipulation of the HTML
+  -Stands for Cascading Style Sheet
+  -describes the appearence/visual representation
+
+1. Conceptual Overview of CSS   **CRUCIAL**
+2. Basic CSS Syntax **CRUCIAL**
+3. Including Styles Correctly **CRUCIAL**
+4. Color Systems: RGB, Hex, etc **CRUCIAL**
+5. Common Text Properties **Important**
+6. font-family property **CRUCIAL**
+
+CSS Rules
+Format:
+selector {
+  property: value;
+}
+Ex:
+h1 {
+  color: purple;
+}
+
+Inline Styles
+-you can write your stels directly inline on each element, but this is NOT A GOOD IDEA most of the time
+
+The <style> element
+- you can write your stles inside of a <style> element. WHich is easy, but makes it impossible to share stlyes between documents NOT RECOMMENDED EITHER
+
+External Stylesheet
+-Write your styles in a .css file, and then include using a <link> in the head of your html document. RECOMMENDED 
+- so that you do not have to copy the style on each html page
+-a link element will relate the css style sheet to the html
+  i.e. <link rel="stylesheet" href="<css file>"
+
+  Color Systems
+  -RGB (0, 0, 0)
+  -Hex: still rgb but follows (0-9 A-F)
+    ex: #ffff00 red, green, blue
+
+  Px(pixels) are absolute units
+  by far the most commonly used absolute unitsnot recommended for responsive websites
+  1px does not eual the width of exactly of one pixel!

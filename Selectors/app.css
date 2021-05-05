@@ -1,0 +1,48 @@
+span {
+  color: #457b9d;
+}
+
+.tag {
+  color: #f1faee;
+  background-color: #e63946;
+  font-size: 16px;
+}
+
+footer a{
+  color: #e63946;
+}
+
+h2 + button {
+  background-color: magenta;
+  font-size: 20px;
+}
+
+footer > a{
+  color: #2a9d8f;
+}
+
+input[type="password"] {
+  color: #ffe8d6;
+}
+
+/* section[class="post"] {
+  background-color: purple;
+} */
+
+
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+.post button:active {
+  background-color: #83c5be
+}
+
+.post:nth-of-type(2n) {
+  background-color: #dfe8dc;
+}
+
+h2::first-letter {
+  font-size: 50px;
+}

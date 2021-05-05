@@ -1,0 +1,52 @@
+Section Goals
+1. Understading what HTML5 Actually is   **Important**
+2. Block Vs. Inline Elements    **Important**
+3. <span> and <div> elements    **Important**
+4. <sub> elements, <hr> elements, <sup> elements, <br> elements
+5. Semantic Elements   **Important**
+6. VSCode Emmet
+
+HTML 5
+  -the latest evolution of the stand that defines HTML
+Semantics
+  -allows you to describe more precisely what your content is
+
+Block vs Inline ELement -Divs & Spans
+Inline elements fit in alongside other elements
+Block level elements take up a whole "block" of space
+
+<div> 
+  -the HTML Content Division element to group content together such as a picture and a description text
+<span>
+  -a generic inline container we can wrap around; it does not take it's on block of content
+
+Assorted Elements
+<hr> 
+  -makes a divider between paragraph level element
+<br>
+  -creates a line break exactly where you want to
+<sub>
+  -makes characters small below the baseline i.e. chemical formula
+<sup>
+  -makes chracters small above the baseline i.e. exponents
+
+HTML Entities
+  -starts with an ampersand and ends wih a semicolon
+  -used to display reserved chracters, that normally would be invalid
+  -also used in place of difficult to type characters
+  -the browser interprets them and renders the correct chracters instead
+  i.e. &<code>;
+
+Semantic Markup
+  -markup that relates to the meaning of the content
+    adding header, footer, nav to distinguish each section instead of using just div
+  List of Semantic Elements
+  <section>
+  <article>
+  <nav>
+  <main>
+  <header>
+  <footer>
+  <aside>
+  <summary>
+  <details>
