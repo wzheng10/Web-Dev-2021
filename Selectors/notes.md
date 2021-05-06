@@ -87,3 +87,24 @@ Pseudo Elements- keywords added to a selector that lets you style a particular p
 4. ::first-line
 5. ::selection
 
+CSS Cascade- order your styles are declared in and linked matters
+i.e.
+h1 {
+  color: red;
+}
+h1 {
+  color: purple;
+}
+**color would be purple**
+Priority order
+ID(#) > CLASS(.) > ELEMENT
+
+Inline Styles
+1. Inline Styles **not recommended**
+2. ID(#) Selectors
+3. Class(.), Attritubes, & Pseudo-Class Selectors(:)
+4. Element and Pseudo-Element Selectors(::)
+
+!important overrides all styles **not recommended**
+
+Inheritance

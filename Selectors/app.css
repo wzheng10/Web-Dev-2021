@@ -47,3 +47,30 @@ h2::first-letter {
   font-size: 100px;
 }
 
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  background-color: #fdffb6;
+}
+
+h1, h2 {
+  color: yellow;
+}
+
+#signup {
+  background-color: green;
+  color: grey;
+}
+
+#login {
+  background-color: purple;
+  color: black;
+}
+
+button:hover {
+  font-size: 16px;
+  color: red;
+  background-color: limegreen;
+}
