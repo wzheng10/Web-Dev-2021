@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 div {
     width: 200px;
     height: 200px;
@@ -20,6 +24,7 @@ div {
     box-sizing: border-box;
     border-left-color:#e63946 ;
     border-left-width: 8px;
+    margin: 50px
 }
 
 #three {
@@ -27,4 +32,21 @@ div {
     border: 4px dashed black;
     box-sizing: border-box;
     border-radius: 50%;
+}
+h1 {
+    color:#e76f51;
+    background-color: #e9c46a;
+    width: 200px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+button {
+    padding: 30px 20px 30px 20px;
+}
+
+span {
+    margin-left: 10px;
 }
