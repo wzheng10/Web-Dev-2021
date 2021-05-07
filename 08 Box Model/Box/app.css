@@ -1,0 +1,30 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #9bf6ff;
+}
+
+#one {
+    background-color: #ffcdb2;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #ffb4a2;
+    border-color: #1d3557;
+    border-width: 3px;
+    border-style: dashed;
+    box-sizing: border-box;
+    border-left-color:#e63946 ;
+    border-left-width: 8px;
+}
+
+#three {
+    background-color: #e5989b;
+    border: 4px dashed black;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
