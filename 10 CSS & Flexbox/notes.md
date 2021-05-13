@@ -67,3 +67,20 @@ Responsive Design
 -Enter Responsive: Now we create ONE website and stylesheet that is avaliable for devices of all sizes and features
 
 Media Queries- allows us to modify our styles depending on particular parameters like screen width or device type 
+Ex.
+@media (max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 80%
+    }
+}
+
+@media (min-width: 30em) and (orientation: landscape) {
+    #container {
+        flex-direction:column:
+        justify-content: center;
+    }
+}
