@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-2">Forms</h1>
+        <form action="#nowehere"></form>
+        <div class="form-row">
+            <div class="form-group col-lg-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email">
+            </div>
+
+            <div class="form-group col-lg-6">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Street Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Ex. 923 Chicken Ranch Street">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Ex. Los Angeles">
+            </div>
+            <div class="form-group col-md-3 col-6">
+                <label for="state">State</label>
+                <select class="form-control" name="state" id="state">
+                    <option value="AL">Alabama</option>
+                    <option value="Ak">Alaska</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3 col-6">
+                <label for="Zipcode">City</label>
+                <input type="text" class="form-control" id="Zipcode" placeholder="Ex. 12345-1111">
+            </div>
+        </div>
+        <!-- <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">
+                Sign Me Up!
+            </label>
+          </div> -->
+        <div class="form-group">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="tos">
+                <label class="custom-control-label" for="tos">
+                    Sign Me Up!
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Register</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
