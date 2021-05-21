@@ -46,3 +46,23 @@ for (let i = 0; i < animals.length; i++) {
 0 "lions"
 1 "tigers"
 2 "bears"
+
+**Template Literals**
+-string literals alowwing embedded expressions
+Ex.
+`string text ${expression} string text`
+
+While Loops
+-will continue running as long as the tet condition is true
+
+let num = 0;
+while (num < 5){
+    console.log(num)
+    num ++
+}
+
+parseint('anything') will show NaN if the input is not a number
+
+For...Of
+-a nice and easy way of iterating over arrays (or other iterable ojbects)
+Note* It is not internet explorere supported
