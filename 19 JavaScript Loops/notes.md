@@ -66,3 +66,12 @@ parseint('anything') will show NaN if the input is not a number
 For...Of
 -a nice and easy way of iterating over arrays (or other iterable ojbects)
 Note* It is not internet explorere supported
+Ex.
+for (variable of iterable) {
+    statement
+}
+
+Iterating Objects
+Object.values()
+Object.keys()
+Object.entries()
