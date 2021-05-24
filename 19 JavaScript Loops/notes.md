@@ -14,9 +14,29 @@ Loops
     -alows us to repeat code
 Types of loop
 1. for loop
+a for loop will repeat until a specified condition evaluates to false
+    for ([initialExpression]; [conditionExpression]; [incrementExpression])
+        statement
+
 2. while loop
+a while loop executues it statments as long as a specified condition evalutates to true or it will be passed to the following while statement
+    while (condition)
+        statement
 3. for...of loop
+a for...of statement creates a loop iterating over iterable objects, invoking a custom iteration hook with statements ot be execute for the value of each distinct property
+    for (variable of object)
+        statement
 4. for...in loop
+a for...in statement iterates a specified variable over all the enumberable properties of an object
+    for (variable in object)
+        statement
+
+for...in iterates over property names, for...of iterates over property values
+**break statements**
+using the break statement to terminate a loop
+break; at the end of the condition will stop the loop
+
+
 
 For Loop Syntax
 for (
@@ -75,3 +95,10 @@ Iterating Objects
 Object.values()
 Object.keys()
 Object.entries()
+
+Project Time
+Todo List
+'new'- Add A Todo
+'list'- LIst All Todos
+'delete' -Remove Specifiec Todo
+'quit' -Quit App
