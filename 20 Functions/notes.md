@@ -44,4 +44,9 @@ return is how we get values out of a function and save them
 **condition ? expression_1 : expression_2;**
 The JavaScript ternary operator is the only operator that takes three operands.
 
-The condition is an expression that evaluates to a Boolean value, either true or false. If the condition is true, the ternary operator returns expression_1, otherwise it returns the expression_2.
+The condition is an expression that evaluates to a Boolean value, either true or false. If the condition is true, the ternary operator returns expression_1, otherwise it returns the expression_2
+
+blocks - the code in between the curly braces { } 
+block scopes - can only be accessibly inside the block and cannot be called from outside
+lexical scope- all the inner layers are able to access the outer layer but not the other way around
+var makes the varaible accessible outside of the blocks
