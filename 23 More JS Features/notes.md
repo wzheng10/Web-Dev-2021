@@ -2,7 +2,7 @@ Newer JS Features
 
 **Crucial!**
 Spread with Arrays
-Spread in Function CAlls
+Spread in Function Calls
 Spread with Objects
 
 *Important*
@@ -26,7 +26,7 @@ function greet(person, msg = 'Hey there', puncuation = '!') {
        console.log( `${msg}, ${person} ${puncuation}`)
 } // just puting in the msg parameter before the name will mess up the order
 
-Spread- spread syntax allows an interable such as an array to be expanded in places where zero or more arugments (for function calls) or elements ( for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are exprected.
+Spread- spread syntax allows an iterable such as an array to be expanded in places where zero or more arugments (for function calls) or elements ( for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are exprected.
 
 -for function calls: expands an iterable (arra, string, etc) into a list of arguments
 Ex.
