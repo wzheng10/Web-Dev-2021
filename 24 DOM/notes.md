@@ -8,7 +8,7 @@ querySelector
 InnerHTML and Text
 Changing Styles
 classList
-Creating/Removing ELements
+Creating/Removing Elements
 
 *Important*
 Manipulating Attributes
@@ -186,3 +186,78 @@ for (let i = 0; i <high.length; i++){
 for (let i of high){
     i.classList.toggle('highlight')
 }
+
+Traversing Parent/Child/Sibling
+.parentElement- will traverse upward
+Ex.
+const firstBold = document.querySelector('b') //saving the first bold element <b>Silkie</b>
+firstBold.parentElement // shows the parent element the <p>...</p>
+firstBold.parentElement.parentElement // will show the parent of the paragragh tag which is the <body>...</body>
+
+.childElementCount- shows the number of child elements there are
+.children- shows the HTMLCollection (appears like an array ,but is not an array)
+const paragraph = firstBold.parentElement
+paragraph.childElementCount // 8
+paragraph.children // HTMLCollection(8) [b, b, a, a, a, a, a, a]
+paragraph.children[0] // <b>Silkie</b>
+
+.nextSibling
+.previousSibling- gives us the corresponding node (white spaces)
+
+.nextElementSibling- to get to the previous element sibling
+.previousElementSibling- to get to the next element sibling
+
+Append & AppendChild
+    Adding a Photo with .appendChild
+const newImg = document.createElement('img')
+newImg.src = 'some random link'
+document.body.apppendChild(newImg)  // will add the img to the page
+newImg.classList.add('square')  // will format it to the 'square' class in the .css file
+    Adding a Text with .appendChild
+const newH3 = documen.createElement('h3')
+newH3.innerText = "I am new!"
+document.body.appendChild(newH3) // displays 'I am new!' at the bottom of the page
+
+    Using append and prepend- easy way to add text to the end of something
+const p = document.querySelector('p')
+p.append('i am new text yaaaaaaaaay!!!')    // the pargraph p now contains the msg at the end
+p.prepend('i am new text yaaaaaaaaay!!!')   // does the same thing but to the front of the paragraph
+
+    creating a bold tag
+const newB = document.createElement('b')
+newB.append('Hi!')  // newB now display <b>Hi!</b>
+p.prepend(newB) // the bold Hi! will now show up in the front of the paragraph 
+
+    .insertAdjacentElement(var1, var2)
+        'beforebegin': Before the targetElement itself.
+        'afterbegin': Just inside the targetElement, before its first child.
+        'beforeend': Just inside the targetElement, after its last child.
+        'afterend': After the targetElement itself.
+
+const h2 = document.createElement('h2') //creating the new h2 element
+h2.append('Are adorable chickens')  // create the message for the h2 element <h2>Are adorable chickens</h2>
+const h1 = document.querySelector('h1') //create a varaible for the h1
+h1.insertAdjacentElement('afterend', h2)    //inserting the h2 after the h1
+const container = document.querySelector('#container');
+
+
+Ex 58:
+for (let i = 0; i < 100; i++){
+    const button = document.createElement('button');
+    button.innerText = ('Hey!');
+    container.appendChild(button); 
+}
+
+removeChild() & remove()
+removeChild() method removes a child node from the DOM and returns the removed node.
+    -is a janky old method
+Ex.
+    const firstLi = document.querySelector('li')
+    const ul = firstLi.parentElement
+    ul.removeChild(firstLi)     //needs the parent in order to remove the child
+
+remove()- method removes the object from the tree it belongs to
+    -no hassle of the parent and child 
+Ex.
+    const img = document.querySelector('img')
+    img.remove()
