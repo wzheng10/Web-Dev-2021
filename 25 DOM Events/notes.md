@@ -65,3 +65,33 @@ tasButton.onclick = shout
 tasButton.onclick = twist
 
 unless you use .addEventListener
+
+## Change and Input Events ##
+const input = document.querySelector('input');
+
+input.addEventListener('change', function(e){
+    console.log("whatever")
+})      
+//  will result in console.log to trigger when leaving the text box
+
+const input = document.querySelector('input');
+
+input.addEventListener('input', function(e){
+    console.log("INPUT EVENT!")
+})
+//things that do impact the value inside the textbox will now trigger the console.log
+
+Excercise 62 
+* creating an input to say
+    1. "Enter Your Username" when text is blank
+    2. Start off with 'Welcome' during text
+    
+const input = document.querySelector('input');
+const h1 = document.querySelector('h1');
+
+input.addEventListener('input', function(e){
+    if (input.value === "") {
+    h1.innerText = "Enter Your Username";
+    } else { 
+        h1.innerText = `Welcome, ${input.value}`}
+})
