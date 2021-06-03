@@ -95,3 +95,17 @@ input.addEventListener('input', function(e){
     } else { 
         h1.innerText = `Welcome, ${input.value}`}
 })
+
+## Event Bubbling ##
+<body>
+    <section onclick="alert('section clicked')">
+        <p onclick="alert('paragraph clicked')">
+            I am a paragraph:
+            <button onclick="alert('button clicked')">Click</button>
+        </p>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+Button is triggered, then paragraph and lastly section
+Event bubbles to the top, so order matters
