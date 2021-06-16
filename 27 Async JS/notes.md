@@ -47,3 +47,22 @@ It can be in one of these states:
     rejected: the operation has failed
 
 A promise is a returned object to which you attach callbacks, instead of passing callbacks into a function
+
+## Async Functions ##
+A newer and cleaner syntax for working with async code!
+Syntax "sugar" for promises
+
+2 Pieces
+Async
+    -will always return a promise
+
+    -if the function return sa value, the promise will be resolved with that value
+
+    -if the function throws an exception, the promise will be rejected
+
+    -if there are any errors inside the async, then the promise will default to a rejection
+
+Await
+    -can only use the await keyword inside of functions declared with async.
+
+    -will pause the execution of the function, and wait for the promise to be resolved
