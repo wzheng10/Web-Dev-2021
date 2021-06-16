@@ -47,75 +47,52 @@ const fakeRequestPromise = (url) => {
 //     console.log('ERROR!!!!!!', err)
 // })
 
+// fakeRequestPromise('yelp.com/api/coffee/page1')
+//     .then(() => {
+//         console.log('PROMISE RESOLVED!')
+//         console.log('IT WORKED!!!!!')
+//         fakeRequestPromise('yelp.com/api/coffee/page2')
+//             .then(() => {
+//                 console.log('PROMISE RESOLVED (page 2)!')
+//                 console.log('IT WORKED!!!!!')
+//                 fakeRequestPromise('yelp.com/api/coffee/page2')
+//                     .then(() => {
+//                         console.log('PROMISE RESOLVED (page 3)!')
+//                         console.log('IT WORKED!!!!!')
+//                     }).catch(() => {
+//                         console.log('PROMISE REJECTED! page3')
+//                         console.log('OH NO, ERROR!!!')
+//                     })
+//             }).catch(() => {
+//                 console.log('PROMISE REJECTED! page 2')
+//                 console.log('OH NO, ERROR!!!')
+//             })
+//     }).catch(() => {
+//         console.log('PROMISE REJECTED! page 1')
+//         console.log('OH NO, ERROR!!!')
+//     })
+
+
+//Using promises for clean 
 fakeRequestPromise('yelp.com/api/coffee/page1')
-    .then(() => {
-        console.log('PROMISE RESOLVED!')
-        console.log('IT WORKED!!!!!')
-        fakeRequestPromise('yelp.com/api/coffee/page2')
-            .then(() => {
-                console.log('PROMISE RESOLVED (page 2)!')
-                console.log('IT WORKED!!!!!')
-                fakeRequestPromise('yelp.com/api/coffee/page2')
-                    .then(() => {
-                        console.log('PROMISE RESOLVED (page 3)!')
-                        console.log('IT WORKED!!!!!')
-                    }).catch(() => {
-                        console.log('PROMISE REJECTED! page3')
-                        console.log('OH NO, ERROR!!!')
-                    })
-            }).catch(() => {
-                console.log('PROMISE REJECTED! page 2')
-                console.log('OH NO, ERROR!!!')
-            })
-    }).catch(() => {
-        console.log('PROMISE REJECTED! page 1')
-        console.log('OH NO, ERROR!!!')
+    .then((data) => {
+        console.log("IT WORKED!!!(page 1)")
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page2')
+    })
+    .then((data) => {
+        console.log("IT WORKED!!!(page 2)")
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page3')
+    })
+    .then((data) => {
+        console.log("IT WORKED!!!(page 3)")
+        console.log(data)
+    })
+    .catch((err) => {
+        console.log("OH NO, A REQUEST FAILED!!!")
+        console.log(err)
     })
 
 
-
-// fakeRequestPromise('yelp.com/api/coffee/page1')
-//     .then(() => {
-//         console.log("IT WORKED!!!!!! (page1)")
-//         fakeRequestPromise('yelp.com/api/coffee/page2')
-//             .then(() => {
-//                 console.log("IT WORKED!!!!!! (page2)")
-//                 fakeRequestPromise('yelp.com/api/coffee/page3')
-//                     .then(() => {
-//                         console.log("IT WORKED!!!!!! (page3)")
-//                     })
-//                     .catch(() => {
-//                         console.log("OH NO, ERROR!!! (page3)")
-//                     })
-//             })
-//             .catch(() => {
-//                 console.log("OH NO, ERROR!!! (page2)")
-//             })
-//     })
-//     .catch(() => {
-//         console.log("OH NO, ERROR!!! (page1)")
-//     })
-
-
-// THE CLEANEST OPTION WITH THEN/CATCH
-// RETURN A PROMISE FROM .THEN() CALLBACK SO WE CAN CHAIN!
-// fakeRequestPromise('yelp.com/api/coffee/page1')
-//     .then((data) => {
-//         console.log("IT WORKED!!!!!! (page1)")
-//         console.log(data)
-//         return fakeRequestPromise('yelp.com/api/coffee/page2')
-//     })
-//     .then((data) => {
-//         console.log("IT WORKED!!!!!! (page2)")
-//         console.log(data)
-//         return fakeRequestPromise('yelp.com/api/coffee/page3')
-//     })
-//     .then((data) => {
-//         console.log("IT WORKED!!!!!! (page3)")
-//         console.log(data)
-//     })
-//     .catch((err) => {
-//         console.log("OH NO, A REQUEST FAILED!!!")
-//         console.log(err)
-//     })
 
