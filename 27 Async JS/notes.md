@@ -38,3 +38,12 @@ The browser does the work
 ## Promises ##
 
 A promise is an object prepresenting the eventual completion or failure of some(asynchronous) operation
+It can be in one of these states:
+
+    pending: initial sate, neither fulfilled nor rejected.
+
+    fulfilled: meaning that the operation completed successfully
+    
+    rejected: the operation has failed
+
+A promise is a returned object to which you attach callbacks, instead of passing callbacks into a function

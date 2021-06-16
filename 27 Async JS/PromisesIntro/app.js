@@ -22,34 +22,55 @@ const fakeRequestPromise = (url) => {
         }, delay)
     })
 }
-
-fakeRequestCallback('books.com/page1', 
-    function (response) {
-    console.log('IT WORKED!!!!!!!!!!')
-    console.log(response)
-    fakeRequestCallback('books.com/page2',
-        function(response){
-            console.log('IT WORKED AGAIN!!!!!!!!!!')
-            console.log(response)
-            fakeRequestCallback('books.com/page3',
-            function (response) {
-                console.log('IT WORKED x3!!!!!!!!!!')
-                console.log(response) 
-            },
-            function (err){
-                console.log('ERROR(3rd Request)!!!!!!!!!!', err)
-            })
-        },
-        function (err){
-            console.log('ERROR(2nd Request)!!!!!!', err)
-        })
-}, function (err) {
-    console.log('ERROR!!!!!!', err)
-})
-
-// Array.map(function(element){
-
+///////      CALLBACK HELL     /////
+// fakeRequestCallback('books.com/page1', 
+//     function (response) {
+//     console.log('IT WORKED!!!!!!!!!!')
+//     console.log(response)
+//     fakeRequestCallback('books.com/page2',
+//         function(response){
+//             console.log('IT WORKED AGAIN!!!!!!!!!!')
+//             console.log(response)
+//             fakeRequestCallback('books.com/page3',
+//             function (response) {
+//                 console.log('IT WORKED x3!!!!!!!!!!')
+//                 console.log(response) 
+//             },
+//             function (err){
+//                 console.log('ERROR(3rd Request)!!!!!!!!!!', err)
+//             })
+//         },
+//         function (err){
+//             console.log('ERROR(2nd Request)!!!!!!', err)
+//         })
+// }, function (err) {
+//     console.log('ERROR!!!!!!', err)
 // })
+
+fakeRequestPromise('yelp.com/api/coffee/page1')
+    .then(() => {
+        console.log('PROMISE RESOLVED!')
+        console.log('IT WORKED!!!!!')
+        fakeRequestPromise('yelp.com/api/coffee/page2')
+            .then(() => {
+                console.log('PROMISE RESOLVED (page 2)!')
+                console.log('IT WORKED!!!!!')
+                fakeRequestPromise('yelp.com/api/coffee/page2')
+                    .then(() => {
+                        console.log('PROMISE RESOLVED (page 3)!')
+                        console.log('IT WORKED!!!!!')
+                    }).catch(() => {
+                        console.log('PROMISE REJECTED! page3')
+                        console.log('OH NO, ERROR!!!')
+                    })
+            }).catch(() => {
+                console.log('PROMISE REJECTED! page 2')
+                console.log('OH NO, ERROR!!!')
+            })
+    }).catch(() => {
+        console.log('PROMISE REJECTED! page 1')
+        console.log('OH NO, ERROR!!!')
+    })
 
 
 
@@ -97,6 +118,4 @@ fakeRequestCallback('books.com/page1',
 //         console.log("OH NO, A REQUEST FAILED!!!")
 //         console.log(err)
 //     })
-
-
 
