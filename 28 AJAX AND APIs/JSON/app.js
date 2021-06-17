@@ -1,0 +1,2 @@
+//This is a string os JSON
+const data = `{"ticker":{"base":"BTC","target":"USD","price":"37717.57558473","volume":"62616.34435980","change":"218.91502801"},"timestamp":1623962106,"success":true,"error":""}`

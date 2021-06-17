@@ -56,7 +56,7 @@ Syntax "sugar" for promises
 Async
     -will always return a promise
 
-    -if the function return sa value, the promise will be resolved with that value
+    -if the function returns a value, the promise will be resolved with that value
 
     -if the function throws an exception, the promise will be rejected
 
