@@ -31,9 +31,22 @@ key value pairs must be all in double quotes for JSON
 JSON.stringify() turns a JS into JSON
 JSON.parse() takes a string of JSON into JS
 
-XML HTTPRequest
+## XML HTTPRequest ##
     the 'original way of sending requests vis JS.
 
     does not support promises, so lots of callbacks!
 
     clunky syntax that I find difficualt to remember
+
+## Fetch API ##
+Fetch API
+    newer way of making requests via JS
+
+    Supports promises!
+
+    not supported in Internet Explorer :()
+
+## AXIOS ##
+a library for making HTTP requests
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
