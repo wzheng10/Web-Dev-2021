@@ -47,6 +47,7 @@ Fetch API
     not supported in Internet Explorer :()
 
 ## AXIOS ##
-a library for making HTTP requests
+an external library for making HTTP requests
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+leave before the app.js, preferably in the head
