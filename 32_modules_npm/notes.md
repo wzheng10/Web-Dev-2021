@@ -35,3 +35,10 @@ How to Install NPMS
   
   npm install -g <packageName> 
     will install globally
+
+  npm init will create the package.json 
+    (meta data for your project)
+  when uploading code we dont share the node_module
+
+  before running the node index.js after copying other repos
+  must install dependices by doing npm install, and it will install all of them(node_modules) automatically
