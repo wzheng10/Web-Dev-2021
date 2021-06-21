@@ -4,7 +4,7 @@ Exploring MOdules & The NPM Universe
 Module.Exports
 Requring Modules
 Using NPM
-INstalling Packages
+Installing Packages
 Creating Package.json files
 *Important*
 *Nice To Have*
@@ -33,3 +33,5 @@ How to Install NPMS
   require the package
     const colors = require("colors")
   
+  npm install -g <packageName> 
+    will install globally
