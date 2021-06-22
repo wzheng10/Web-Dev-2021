@@ -1,4 +1,4 @@
-Exploring MOdules & The NPM Universe
+Exploring Modules & The NPM Universe
 
 **Crucial!**
 Module.Exports
