@@ -7,7 +7,7 @@ Path Parameters
 Working With Query Strings
 *Important*
 Nodemon
-<!-- *Nice To Have* -->
+*Nice To Have*
 
 ## What is Express? ##
   A framework for Node.js that helps build wen apps
