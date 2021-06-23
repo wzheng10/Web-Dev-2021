@@ -14,3 +14,5 @@ Templating
   for example, we could define a single "Search" template that displays all the results for a given search term. We don't know what th eterm is or how many results there are ahead of time. The webpage is created on the fly.
 
   EJS (Embedded javaScript templating)
+
+  EJS Includes - including other templets in a templet
