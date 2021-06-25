@@ -63,11 +63,8 @@ Template Literals
 
 Before:
 let produce = 'Artichoke';
-undefined
 let price = 2.25;
-undefined
 let qty = 5;
-undefined
 "You bought " + qty + " " + produce + ". Total is: " + price * qty
 "You bought 5 Artichoke. Total is: 11.25"
 

@@ -1,13 +1,13 @@
 Box Models
 
-1. Crucial!
+Crucial!
 -Border
 -Padding
 -Width & Height
 -Margin
 -Display Property
 -Units- Percentages, EMS, & REMS
-2. Nice to Have
+Nice to Have
 -Border Radius
 
 Width and Height
@@ -18,7 +18,7 @@ Border & Border Radius
 Properties
 Border-width- controls the thickness of the border
 Border-color- controls the color of the border
-border-style- controls ht eline style -dashed, solid, etc
+border-style- controls the line style -dashed, solid, etc
 
 box-sizing has two proterties
 1. content-box that is the default behavior with no adjustments

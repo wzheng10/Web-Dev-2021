@@ -1,12 +1,12 @@
 CSS Selectors
 
-1. Crucial!
+Crucial!
   -Element Selector
   -Class Selector
   -ID Selector
   -Descendent Selector
   -CSS Specificity
-2. Important
+Important
   -Adjacent Selector
   -Direct Descendent Selector
   -Attribute Selector
@@ -44,7 +44,9 @@ i.e. .complete {
  <span> is very much like a <div> element, but <div> is a block-level element whereas a <span> is an inline element.
   <span> can be used to group elements for styling purposes (using the class or id attributes)
 
-Descendant Selector -selects all <a>'s that are nested inside an <li>
+anchor tag - creates a link
+<a href="<website>"> comment</a>
+Descendant Selector -selects all anchor tags (<a>) that are nested inside an <li>
 i.e. li a{
   color: teal;
 }
@@ -56,7 +58,7 @@ i.e. h1 + p {
   color: red;
 }
 
-Direct Child- selects only the <li>'s that are direct chldren of a <div> element
+Direct Child- selects only the <li>'s that are direct children of a <div> element
 
 div > li {
   color: white;

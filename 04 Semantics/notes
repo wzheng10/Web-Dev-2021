@@ -16,9 +16,11 @@ Inline elements fit in alongside other elements
 Block level elements take up a whole "block" of space
 
 <div> 
-  -the HTML Content Division element to group content together such as a picture and a description text
+  -the HTML Content Division element to group content together 
+  such as a picture and a description text
 <span>
-  -a generic inline container we can wrap around; it does not take it's on block of content
+  -a generic inline container we can wrap around; 
+  it is not a block-level element
 
 Assorted Elements
 <hr> 
@@ -31,7 +33,7 @@ Assorted Elements
   -makes chracters small above the baseline i.e. exponents
 
 HTML Entities
-  -starts with an ampersand and ends wih a semicolon
+  -starts with an ampersand(&) and ends wih a semicolon(;)
   -used to display reserved chracters, that normally would be invalid
   -also used in place of difficult to type characters
   -the browser interprets them and renders the correct chracters instead
@@ -43,8 +45,8 @@ Semantic Markup
   List of Semantic Elements
   <section>
   <article>
-  <nav>
-  <main>
+  <nav> - provides navigation links
+  <main>- specifies the main content of the document;
   <header>
   <footer>
   <aside>

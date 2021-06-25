@@ -10,7 +10,7 @@ Other Assorted Useful CSS Properties
 -Nice to have
 1. Transforms
 
-Opacity& Aplha Channel
+Opacity& Alpha Channel
 Alpha Channel
 rgba (red, green, blue, alpha) or hex adds two more numbers to the end
 the alpha channel only effects the background color
