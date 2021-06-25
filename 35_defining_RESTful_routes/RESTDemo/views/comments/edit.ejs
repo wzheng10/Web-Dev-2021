@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Show</title>
+  <title>Edit</title>
 </head>
 <body>
-  <h1>Comment id: <%= comment.id %></h1>
-  <h2>
-    <%= comment.comment %> - <%= comment.username %> 
-  </h2>
+  <h1>Edit</h1>
+  <form method="post" action="/comments/<%= comment.id%>/?_method=PATCH">
+    <textarea name="comment" id="" cols="30" rows="10">
+      <%= comment.comment%></textarea>
+      <button>Submit</button>
+  </form>
   <a href="/comments">Back to Index Tab</a>
-  <a href="/comments/<%=comment.id%>/edit">Edit Comment </a>
 </body>
 </html>
