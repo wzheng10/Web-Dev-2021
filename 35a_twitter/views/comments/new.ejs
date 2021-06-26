@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tweet</title>
+</head>
+
+<body>
+  <h1>Making a Tweet</h1>
+  <form action="/comments" method="post">
+    <section>
+      <label for="twitter_username"> Username: </label>
+      <input type="text" id="twitter_username" placeholder="Username" name="twitter_username">
+    </section>
+    <section>
+      <label for="twitter_comment">Tweet</label>
+      <br>
+      <textarea name="twitter_comment" id="twitter_comment" cols="30" rows="10" placeholder="Tweet Here"></textarea>
+    </section>
+    <button>Submit</button>
+  </form>
+  <a href="/comments">Back to Index Tab</a>
+</body>
+
+</html>
