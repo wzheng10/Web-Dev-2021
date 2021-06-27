@@ -1,4 +1,4 @@
-Our FIrst DataBase: MongoDB
+Our First DataBase: MongoDB
 
 **Crucial!**
 Installation
