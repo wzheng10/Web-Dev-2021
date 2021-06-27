@@ -76,3 +76,33 @@ The PATCH method is used to apply partial modifications to a resource.
 
 Patch and put request are not the same
 put changes the entirety of the payload whereas patch changes only a part of it
+
+Patch and Delete does not work through a form element, but we can fake it.
+
+############################################################################
+app.use(express.static(path.join(__dirname,'public')));
+
+  This statement acts as a middleware that is specifying the server to use the public directory form the same place where the app.js or index.js (that has this line) is located.
+
+  express.static is used to pint the directory of our static files to let the express know where to refer for static files (that are css and front end js files).
+
+  path.join joins the both arguments passed to form a meaningful path.
+
+  __dirname gives the directory path of the current file.
+
+app.use(express.urlencoded({extended:true}));
+
+  This statement acts as a middleware that that recognizes incoming request object as JSON Object.
+
+  express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays.
+
+  Extended: true just give more flexibility on how to handle that data.
+
+app.use(express.json());
+
+  This statement acts as a middleware that that recognizes incoming request object as JSON Object.
+
+  express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object.
+
+app.set('view engine', 'ejs') 
+  is telling express which templating engine to use... EJS is what we use to display everything on the website. 
