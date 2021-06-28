@@ -23,7 +23,7 @@ ODMs like Mongoose map documents coming from a database into usable JS objects
 npm i init -y (to setup the packages)
 npm i mongoose
 touch index.js
-
+**mongoose commands occur in node**
 ## mongoose connection ##
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/movieApp', {useNewUrlParser: true, useUnifiedTopology: true})
@@ -69,3 +69,40 @@ in node, .load index.js
 amadeus follows the schema format
 to transfer from the mongoose to the mongo
 amadeus.save()  -will make it into a mongo db
+
+## find ##
+
+Movie.find({}).then(data => console.log(data))    //to find all the information on all movies
+Movie.find({rating: 'PG-13'}).then(data => console.log(data)) // finds movies with a rating of 'PG-13'
+
+find by _id
+Movivie.find({_id: '60d91c41dd830409202765f9'}).then(m => console.log(m))
+Movie.findById('60d91c41dd830409202765f9').then(m => console.log(m))
+
+Movie.updateMany({title: {$in: ['Amadeus', 'Stand By Me']}}, {score: 10}).then (res => c
+onsole.log(res))
+  modifies in node but does not show 
+db.movies.find({title: {$in: ['Amadeus', 'Stand By Me']}})
+  to see the changes to score in mongo
+
+Movie.findOneAndUpdate({title: 'The Iron Giant'}, {score: 7.8}, {new: true}).then(m => c
+onsole.log(m))
+  with {new: true} will show the modified changes 
+
+## Deleting ##
+ Movie.remove({title: 'Amelie'}).then(msg => console.log(msg))
+
+Movie.deleteMany({year: {$gte: 1999}}).then(msg => console.log(msg))
+
+## Schema Validations ##
+**Recommended Way**
+const productSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  price: {
+    type: Number,
+    required: true
+  }
+});

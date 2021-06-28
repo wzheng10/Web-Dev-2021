@@ -27,15 +27,15 @@ const Movie = mongoose.model('Movie', movieSchema)
 // const blah = new Movie();
 // blash.save()
 
-Movie.insertMany([
-  {title: 'Amelie', year: 2001, score: 8.3, rating: 'R'},
-  {title: 'Alien', year: 1979, score: 8.1, rating: 'R'},
-  {title: 'The Iron Giant', year: 1999, score: 7.5, rating: 'PG'},
-  {title: 'Stand By Me', year: 1986, score: 8.6, rating: 'R'},
-  {title: 'Moonrise Kingdom', year: 2012, score: 7.3, rating: 'PG-13'}
-])
+// Movie.insertMany([
+//   {title: 'Amelie', year: 2001, score: 8.3, rating: 'R'},
+//   {title: 'Alien', year: 1979, score: 8.1, rating: 'R'},
+//   {title: 'The Iron Giant', year: 1999, score: 7.5, rating: 'PG'},
+//   {title: 'Stand By Me', year: 1986, score: 8.6, rating: 'R'},
+//   {title: 'Moonrise Kingdom', year: 2012, score: 7.3, rating: 'PG-13'}
+// ])
 
-.then(data => {
-  console.log("IT WORKED!") //show up in the node 
-  console.log(data);        //prints the movies data we wrote
-})
+// .then(data => {
+//   console.log("IT WORKED!") //show up in the node 
+//   console.log(data);        //prints the movies data we wrote
+// })
