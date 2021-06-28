@@ -106,3 +106,23 @@ const productSchema = new mongoose.Schema({
     required: true
   }
 });
+
+Instance method refers to a single object in the database. THe keyword "this" in instance methods refers to a particular object in the database
+  Instance methods are defined on the document
+
+Static methods are set to refer to the whole model. Here the model name is Product. So the keyword "this" refers to Product
+  Statics are methods define don the Model
+
+## Mongoose Virtuals##
+Virtuals are document properties that you can get and set but that do not get persisted to Mongo DB. 
+  can define a getter and setter
+
+## Middleware ##
+pre middleware functions are excuted one after another, when each middleware calls next
+
+personSchema.pre('save', async function() {
+  console.log("ABOUT TO SAVE!!!")
+})
+personSchema.post('save', async function() {
+  console.log("JUST SAVED!!!")
+})
