@@ -1,4 +1,4 @@
-
+Connecting to Mongo with Mongoose
 **Crucial!**
 The Role of ORM/ODM's
 Connecting Mongoose to Mongo
@@ -31,7 +31,7 @@ mongoose.connect('mongodb://localhost:27017/movieApp', {useNewUrlParser: true, u
   console.log("CONNECTION OPEN")
 })
 .catch(err => {
-  console.log("OH NO ERROER!!!!")
+  console.log("OH NO ERROR!!!!")
 })
 
 Models are JS classes that represent information in some collection
