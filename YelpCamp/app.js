@@ -48,6 +48,10 @@ app.post('/campgrounds', async (req, res) => {
 //   res.send(camp)
 // })
 
+app.get('/campgrounds/:id/edit', async (req, res) =>{
+  const campground = await Campground.findById(req.params.id)
+  res.render('campgrounds/edit', {campground})
+})
 
 app.listen(3000, ()=> {
   console.log('Serving on port 3000')
