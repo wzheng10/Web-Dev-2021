@@ -29,3 +29,30 @@ In conjunction with requiring the npm package 'morgan'
 
   we have to use the app.use to trigger it
   app.use(morgan('common'))
+
+
+app.use((req, res, next) => {
+console.log("THIS IS MY FIRST MIDDLEWARE!!!!")
+next();
+})
+
+next(); will trigger the page but also send in terminal the msg
+will need next in the function as well as the parameter
+
+function will stop after next
+  app.use((req, res, next) => {
+  console.log("THIS IS MY FIRST MIDDLEWARE!!!!")
+  return next();
+  console.log("THIS IS MY FIRST MIDDLEWARE --- AFTER CALLING NEXT")
+})
+  *the console.log(...AFTER CALLING NEXT) would not run usually after calling next, espcially after returning next
+
+  app.use is good for 404 last ditch errors
+  Ex:
+  app.use((req, res) => {
+  res.send('NOT FOUND!!')
+  })
+
+  app.use((req, res) => {
+  res.status(404).send('NOT FOUND!!')
+  })
