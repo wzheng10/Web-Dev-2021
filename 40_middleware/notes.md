@@ -56,3 +56,12 @@ function will stop after next
   app.use((req, res) => {
   res.status(404).send('NOT FOUND!!')
   })
+
+For specifed routes that need authenticator
+const  verifyPassword = (req, res, next) => {
+  const {password} = req.query;
+  if (password === 'chickennuggets'){
+    return next();
+  }
+  res.send('SORRY, YOU NEED A PASSWORD!!!')
+}
